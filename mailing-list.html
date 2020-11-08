@@ -1,12 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Alberto Graziosi </title>
+  </head>
 <body>
+  <!--Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand mx-auto" href="#">
+         <img class="rounded-circle" src="./images/daisy.png" width="30" height="30" alt="colores">
+         <img class="rounded-circle" src="./images/daisy.png" width="30" height="30" alt="colores">
+         <img class="rounded-circle" src="./images/daisy.png" width="30" height="30" alt="colores">
+        </a>
+      <div class="navbar-nav mx-auto">
+        <ul class="nav navbar mr-auto ">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Gallery  |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+       </ul>
+       <div class="btn-group">
+            <input class="form-control mr-sm-2 rounded-0 text-center" type="search" placeholder="type email here" aria-label="Search">
+            <button class="btn btn-outline-white btn-sm dropdown-toggle rounded=0 bg-warning" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Welcome
+            </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
+           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+             <img class="m-1" src="./images/tallman3.png" alt="colores">
+           </a></li>
+
+         </ul>
+       </div>
+     </div>
+   </div>
+  </nav>
+
+  <!--Message Div -->
+  <div class="container-fluid">
+    <div class="row m-5 justify-content-center">
+      <div class="card border-0">
+        <p><h3>Join Our Mailing List</h3></p>
+      </div>
+    </div>
+  </div>
+
+<!--Form -->
+  <form>
+    <div class="container">
+    <div class="form-group row m-5 justify-items-center">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="row justify-items-center">
+        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              First radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Second radio
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+            <label class="form-check-label" for="gridRadios3">
+              Third disabled radio
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <div class="col-sm-2">Checkbox</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Example checkbox
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </div>
+ </form>
   <div class="row">
     <div class="card bg-dark text-white mx-auto m-5">
         <img class="card-img" src="./images/surf-tie2.png" width="800px" height="750px" alt="Card image">
@@ -16,6 +123,11 @@
             <button type="button" class="btn btn-secondary">Secondary</button>
         </div>
       </div>
-    </div>  
+    </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
