@@ -12,8 +12,6 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand mx-auto" href="#">
          <img class="rounded-circle" src="./images/daisy.png" width="30" height="30" alt="colores">
-         <img class="rounded-circle" src="./images/daisy.png" width="30" height="30" alt="colores">
-         <img class="rounded-circle" src="./images/daisy.png" width="30" height="30" alt="colores">
         </a>
       <div class="navbar-nav mx-auto">
         <ul class="nav navbar mr-auto ">
@@ -28,7 +26,7 @@
           </li>
        </ul>
        <div class="btn-group">
-            <input class="form-control mr-sm-2 rounded-0 text-center" type="search" placeholder="type email here" aria-label="Search">
+            <input class="form-control mr-sm-2 rounded-0 text-center" type="search" placeholder="follow on social media" aria-label="Search">
             <button class="btn btn-outline-white btn-sm dropdown-toggle rounded=0 bg-warning" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Welcome
             </button>
@@ -43,6 +41,14 @@
    </div>
   </nav>
 
+  <!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4">About The Artist</h1>
+      <p class="lead">Get in touch! Follow us on Social Media and get access to our weekly blog!"</p>
+    </div>
+  </div>
+
   <!--Message Div -->
   <div class="container-fluid">
     <div class="row m-5 justify-content-center">
@@ -53,78 +59,140 @@
   </div>
 
 <!--Form -->
-  <form>
-    <div class="container">
-    <div class="form-group row m-5 justify-items-center">
-      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+<form>
+  <div class="container">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Name</label>
+        <input type="email" class="form-control" id="inputEmail4">
       </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-      </div>
-    </div>
-    <fieldset class="form-group">
-      <div class="row justify-items-center">
-        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            <label class="form-check-label" for="gridRadios1">
-              First radio
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
-              Second radio
-            </label>
-          </div>
-          <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-            <label class="form-check-label" for="gridRadios3">
-              Third disabled radio
-            </label>
-          </div>
-        </div>
-      </div>
-    </fieldset>
-    <div class="form-group row">
-      <div class="col-sm-2">Checkbox</div>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Example checkbox
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group row">
-      <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+      <div class="form-group col-md-6">
+        <label for="inputemail">e-mail</label>
+        <input type="email" class="form-control" id="inputemail">
       </div>
     </div>
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          I agree to the terms and conditions
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-warning mb-5">Create My Account</button>
+  </div>
+</form>
+
+<!--blog-->
+<div class="container-fluid">
+  <div class="row m-5 justify-content-center">
+    <div class="card border-0">
+      <p><h3>About the Artist</h3></p>
     </div>
   </div>
- </form>
-  <div class="row">
-    <div class="card bg-dark text-white mx-auto m-5">
-        <img class="card-img" src="./images/surf-tie2.png" width="800px" height="750px" alt="Card image">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button type="button" class="btn btn-secondary">Secondary</button>
+</div>
+
+<!--Media-->
+<div class="container">
+  <ul class="list-unstyled mt-4">
+    <li class="media">
+      <img src="./images/Screen Shot 2020-11-06 at 7.47.21 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">Alberto Graziosi</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </li>
+    <li class="media my-4">
+      <img src="./images/Screen Shot 2020-11-06 at 7.49.25 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">1970's In The News!</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </li>
+    <li class="media">
+      <img src="./images/Screen Shot 2020-11-06 at 7.48.22 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">A peek inside Al's Studio in the Santa Cruz Mountains</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </li>
+  </ul>
+
+  <div class="media">
+    <img class"img-fluid" src="./images/floatinfeye.png" height="84px" width="84px" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0">Earlier Works</h5>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+      <div class="media mt-3">
+        <a class="mr-3" href="#">
+          <img src="./images/Screen Shot 2020-11-06 at 7.48.52 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+        </a>
+        <div class="media-body">
+          <h5 class="mt-0">Pencil and Paper</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
         </div>
       </div>
     </div>
+  </div>
+</div>
 
+
+<!--footer-->
+
+<div class="jumbotron jumbotron-fluid mt-5">
+  <div class="container mt-5 text-center">
+    <h4 class="display-4">Alberto Graziosi</h4>
+    <p class="lead">Contact Alberto at graziosialberto@gmail.com for sales and Gallery Showings</p>
+  </div>
+  <div class="container mt-5">
+    <div class="row text-center">
+      <div class="col col-md-4 col-lg-2">
+          <img src="./images/Screen Shot 2020-11-06 at 7.48.52 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      </div>
+      <div class="col">
+          <img src="./images/Screen Shot 2020-11-06 at 7.48.52 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      </div>
+      <div class="col">
+          <img src="./images/Screen Shot 2020-11-06 at 7.48.52 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      </div>
+      <div class="col col-md-4 col-lg-2">
+          <img src="./images/Screen Shot 2020-11-06 at 7.48.52 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      </div>
+      <div class="col">
+          <img src="./images/Screen Shot 2020-11-06 at 7.48.52 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      </div>
+      <div class="col">
+          <img src="./images/Screen Shot 2020-11-06 at 7.48.52 PM.png" height="84px" width="84px" class="mr-3" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
